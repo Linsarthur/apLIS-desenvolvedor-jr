@@ -1,0 +1,92 @@
+{
+  "sidebar": {
+    "medicos": "Doctors",
+    "pacientes": "Patients"
+  },
+  "medicos": {
+    "titulo": "Doctors",
+    "novo": "New Doctor",
+    "editar": "Edit Doctor",
+    "cadastrar": "Register doctor",
+    "salvar": "Save changes",
+    "salvando": "Saving…",
+    "cancelar": "Cancel",
+    "campos": {
+      "nome": "Name",
+      "nomePlaceholder": "Full name",
+      "crm": "CRM",
+      "crmPlaceholder": "e.g. 123456",
+      "uf": "CRM State",
+      "ufPlaceholder": "e.g. CE"
+    },
+    "lista": {
+      "titulo": "Doctors list",
+      "id": "#",
+      "nome": "Name",
+      "crm": "CRM",
+      "uf": "State",
+      "acoes": "Actions",
+      "vazio": "No doctors registered.",
+      "carregando": "Loading…"
+    },
+    "acoes": {
+      "editar": "Edit",
+      "remover": "Remove"
+    },
+    "mensagens": {
+      "criado": "Doctor created successfully!",
+      "atualizado": "Doctor updated successfully!",
+      "removido": "Doctor removed successfully!",
+      "erroCampos": "Please fill in all fields.",
+      "erroCarregar": "Could not load doctors.",
+      "erroRemover": "Error removing doctor.",
+      "confirmarRemover": "Are you sure you want to remove this doctor?"
+    }
+  },
+  "pacientes": {
+    "titulo": "Patients",
+    "novo": "New Patient",
+    "editar": "Edit Patient",
+    "cadastrar": "Register patient",
+    "salvar": "Save changes",
+    "salvando": "Saving…",
+    "cancelar": "Cancel",
+    "campos": {
+      "nome": "Name",
+      "nomePlaceholder": "Full name",
+      "cpf": "CPF",
+      "cpfPlaceholder": "e.g. 12345678909",
+      "carteirinha": "Health card",
+      "carteirinhaPlaceholder": "Health card number",
+      "dataNascimento": "Date of Birth"
+    },
+    "lista": {
+      "titulo": "Patients list",
+      "id": "#",
+      "nome": "Name",
+      "cpf": "CPF",
+      "carteirinha": "Health card",
+      "nascimento": "Birth date",
+      "acoes": "Actions",
+      "vazio": "No patients registered.",
+      "carregando": "Loading…"
+    },
+    "acoes": {
+      "editar": "Edit",
+      "remover": "Remove"
+    },
+    "mensagens": {
+      "criado": "Patient created successfully!",
+      "atualizado": "Patient updated successfully!",
+      "removido": "Patient removed successfully!",
+      "erroCampos": "Name, health card and CPF are required.",
+      "erroCarregar": "Could not load patients.",
+      "erroRemover": "Error removing patient.",
+      "confirmarRemover": "Are you sure you want to remove this patient?"
+    }
+  },
+  "modal": {
+    "confirmar": "Confirm",
+    "cancelar": "Cancel"
+  }
+}

@@ -1,0 +1,65 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: clinica
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend-php:
+    build: ./backendphp
+    container_name: backendphp
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: clinica
+      DB_USER: user
+      DB_PASSWORD: password
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  backend-node:
+    build: ./backendjs
+    container_name: backendjs
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: clinica
+      DB_USER: user
+      DB_PASSWORD: password
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  frontend:
+    build: ./app
+    container_name: app
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend-php
+      - backend-node
+
+volumes:
+  mysql_data:

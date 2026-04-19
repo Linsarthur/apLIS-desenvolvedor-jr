@@ -1,0 +1,92 @@
+{
+  "sidebar": {
+    "medicos": "Médicos",
+    "pacientes": "Pacientes"
+  },
+  "medicos": {
+    "titulo": "Médicos",
+    "novo": "Novo Médico",
+    "editar": "Editar Médico",
+    "cadastrar": "Cadastrar médico",
+    "salvar": "Salvar alterações",
+    "salvando": "Salvando…",
+    "cancelar": "Cancelar",
+    "campos": {
+      "nome": "Nome",
+      "nomePlaceholder": "Nome completo",
+      "crm": "CRM",
+      "crmPlaceholder": "Ex: 123456",
+      "uf": "UF do CRM",
+      "ufPlaceholder": "Ex: CE"
+    },
+    "lista": {
+      "titulo": "Lista de médicos",
+      "id": "#",
+      "nome": "Nome",
+      "crm": "CRM",
+      "uf": "UF",
+      "acoes": "Ações",
+      "vazio": "Nenhum médico cadastrado.",
+      "carregando": "Carregando…"
+    },
+    "acoes": {
+      "editar": "Editar",
+      "remover": "Remover"
+    },
+    "mensagens": {
+      "criado": "Médico criado com sucesso!",
+      "atualizado": "Médico atualizado com sucesso!",
+      "removido": "Médico removido com sucesso!",
+      "erroCampos": "Preencha todos os campos.",
+      "erroCarregar": "Não foi possível carregar os médicos.",
+      "erroRemover": "Erro ao remover.",
+      "confirmarRemover": "Tem certeza que deseja remover este médico?"
+    }
+  },
+  "pacientes": {
+    "titulo": "Pacientes",
+    "novo": "Novo Paciente",
+    "editar": "Editar Paciente",
+    "cadastrar": "Cadastrar paciente",
+    "salvar": "Salvar alterações",
+    "salvando": "Salvando…",
+    "cancelar": "Cancelar",
+    "campos": {
+      "nome": "Nome",
+      "nomePlaceholder": "Nome completo",
+      "cpf": "CPF",
+      "cpfPlaceholder": "Ex: 12345678909",
+      "carteirinha": "Carteirinha",
+      "carteirinhaPlaceholder": "Número da carteirinha",
+      "dataNascimento": "Data de Nascimento"
+    },
+    "lista": {
+      "titulo": "Lista de pacientes",
+      "id": "#",
+      "nome": "Nome",
+      "cpf": "CPF",
+      "carteirinha": "Carteirinha",
+      "nascimento": "Nascimento",
+      "acoes": "Ações",
+      "vazio": "Nenhum paciente cadastrado.",
+      "carregando": "Carregando…"
+    },
+    "acoes": {
+      "editar": "Editar",
+      "remover": "Remover"
+    },
+    "mensagens": {
+      "criado": "Paciente criado com sucesso!",
+      "atualizado": "Paciente atualizado com sucesso!",
+      "removido": "Paciente removido com sucesso!",
+      "erroCampos": "Nome, carteirinha e CPF são obrigatórios.",
+      "erroCarregar": "Não foi possível carregar os pacientes.",
+      "erroRemover": "Erro ao remover.",
+      "confirmarRemover": "Tem certeza que deseja remover este paciente?"
+    }
+  },
+  "modal": {
+    "confirmar": "Confirmar",
+    "cancelar": "Cancelar"
+  }
+}
